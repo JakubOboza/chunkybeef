@@ -5,12 +5,15 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "chunkybeef"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Some Chunky beef to add taste to rails 3}
+    gem.description = %Q{This is set of things i use in many projects while developing and don't want to write again}
     gem.email = "jakub.oboza@gmail.com"
     gem.homepage = "http://github.com/JakubOboza/chunkybeef"
     gem.authors = ["kuba"]
+    gem.files.include %w(lib/chunkybeef/less.rb lib/chunkybeef/tasks/less.rake)
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency "less" , ">= 1.2.21" 
+    gem.add_development_dependency "rails", ">= 3.0.0.rc"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
